@@ -1,0 +1,57 @@
+                   HTML CODE
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+    <div class="progress">
+        <div class="color"></div>
+    </div>
+</body>
+</html>
+    
+                    CSS CODE
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: blue;
+}
+.progress{
+    position: relative;
+    height: 10px;
+    width: 200px;
+    border: 6px solid #f4a261;
+    border-radius: 15px;
+}
+.color{
+    position: absolute;
+    background-color: #fff;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 4s linear infinite;
+}
+@keyframes progres{
+    0%{
+        width: 0;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+}
